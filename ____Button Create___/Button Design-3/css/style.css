@@ -1,0 +1,77 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: #000;
+}
+
+a{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	padding: 20px 100px;
+	text-align: center; 
+	line-height: 60px;
+	color: black;
+	font-weight: bold;
+	font-size: 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: sans-serif;
+	box-sizing: border-box;
+	background: linear-gradient(90deg,#e4e707,#ed0a0a,#f55d12,#ed0a90);
+	background-size: 400%;
+	border-radius: 20px;
+}
+
+a:hover{
+	animation: animate 8s linear infinite;
+	color: #405150;
+}
+
+@keyframes animate{
+	0%{
+		background-position: 0%; 
+	}
+	100%{
+		background-position: 400%;
+	}
+}
+
+
+a:before{
+	content: ' ';
+	position: absolute;
+	top: -5px;
+	left: -5px;
+	right: -5px;
+	bottom: -5px;
+	z-index: -1;
+	background: linear-gradient(90deg,#e4e707,#ed0a0a,#f55d12,#ed0a90);
+	background-size: 400%;
+	border-radius: 30px;
+	opacity: 0;
+	transition: 1s all ease;
+}
+
+a:hover:before{
+	filter:blur(20px);
+	opacity: 1;
+	animation: animate 8s linear infinite;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,77 @@
+*{
+	padding: 0;margin: 0;
+}
+.header{
+	max-width: 85%;
+	margin: 0 auto;
+}
+.menu{
+	text-align: center;
+}
+ul{
+	background: #333332;
+	border-bottom: 5px solid #f8a80d;
+	max-height: 43px;
+}
+.menu ul li{
+	display: inline-flex;
+	border-left: 2px solid #202120;
+	background: #333332;
+	transition: 1s all ease;
+}
+.menu ul li a:link,
+.menu ul li a:visited{
+	display: block;
+	color: #fff;
+	font-size: 20px;
+	padding: 10px 15px;
+	border-left: 2px solid #454645;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+.menu ul li:hover{
+	background: #f8a80d;
+	color: #000;
+}
+.menu ul li a:hover{
+	color: #000;
+}
+
+.menu ul li:first-of-type{
+	border-left: 0;
+}
+.menu ul li:first-of-type a{
+	border-left: 0;
+}
+
+/*Dropdown Menu*/
+.menu .subMenu{
+	display: none;
+}
+.menu .subMenu li{
+	display: flex;
+	border-left: 0;
+	border-bottom: 2px dotted #000;
+}
+.menu .subMenu li:last-child{
+	border-bottom: 0;
+}
+.menu .subMenu li a{
+	border-left: 0 !important;
+}
+.menu li:hover .subMenu{
+	display: block;
+	position: absolute;
+	margin-top: 43px;
+}
+
+/*Dropdown sub Menu*/
+.menu .subMenu2{
+	display: none;
+}
+.menu .subMenu li:hover .subMenu2{
+	display: block;
+	margin-left: 130px;
+	position: absolute;
+	width: 100%;
+}

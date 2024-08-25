@@ -1,0 +1,57 @@
+body{
+	margin:0;
+	padding:0;
+	background:#05eba7;
+}
+
+.Button{
+	position: absolute;
+	left: 50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+.button{
+	border: none;
+	margin: 20px;
+	padding: 24px;
+	width: 220px;
+	font-family: "montserrat",sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	text-transform: uppercase;
+	border-radius: 6px;
+	cursor: pointer;
+	color: #fff;
+	background-size: 200%; 
+	transition: 2s all ease;
+}
+
+.btn-1{
+	background-image: linear-gradient(to left,#f79f57, #30f7af,#54b711,#f74fc2,#ed0202);
+}
+.btn-2{
+	background-image: linear-gradient(to left,#f79f57, #30f7af,#54b711,#f74fc2,#ed0202);
+}
+.btn-3{
+	background-image: linear-gradient(to left,#f79f57, #30f7af,#54b711,#f74fc2,#ed0202);
+}
+.btn-4{
+	background-image: linear-gradient(to left,#f79f57, #30f7af,#54b711,#f74fc2,#ed0202);
+}
+
+.button:hover{
+	background-position: right;
+	 /*background:black*/
+	
+	 color: red;
+
+}
+
+
+
+
+
+
+
+
